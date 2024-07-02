@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Língua Musical</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+    <div class="divCenter">
+        <header>
+            <h1> Login</h1>
+        </header>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../screens/home.html">Home</a></li>
+            <li><a href="../screens/sobre.html">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+
+    <div class="login-container">
+        <div class="form-group">
+            <form id="user-form-login">
+                <label for="emailLogin">Email:</label>
+                <input type="email" id="emailLogin" name="emailLogin" placeholder="Digite seu email" required />
+    
+                <label for="senhaLogin">Senha:</label>
+                <input type="password" id="senhaLogin" name="senhaLogin" placeholder="Digite sua senha" required />
+    
+                <div class="forgot-password">
+                    <a href="../screens/recuperacaoSenha.html">Esqueci a senha</a>
+                </div>
+                
+                <br/>
+        
+                <button type="submit" class="login-button"> Logar </button>
+        
+                <div class="create-account">
+                    Não possui uma conta? <a href="../screens/cadastro.html">Crie uma conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Língua Musical. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/scriptLogin.js"></script>
+</body>
+
+</html>

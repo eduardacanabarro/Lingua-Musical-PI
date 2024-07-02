@@ -1,0 +1,52 @@
+{
+  "Usuarios": [
+    {
+      "id": 1,
+      "nome": "Joao",
+      "email": "joaovitor.perdicespinheiro@gmail.com",
+      "senha": "12345"
+    },
+    {
+      "id": 2,
+      "nome": "Matheus",
+      "email": "asdf.qwerty@gmail.com",
+      "senha": "poilkjuyt"
+    },
+    {
+      "id": 3,
+      "nome": "Fido Dido",
+      "email": "morreu@games.com",
+      "senha": "123"
+    },
+    {
+      "id": 4,
+      "nome": "Fido Dido",
+      "email": "morreu@games.com",
+      "senha": "123"
+    },
+    {
+      "id": 5,
+      "nome": "teste",
+      "email": "teste2@teste2.com",
+      "senha": "123"
+    },
+    {
+      "id": 6,
+      "nome": "Fido Dido",
+      "email": "vaitomanocu@gmail.com",
+      "senha": "9886"
+    },
+    {
+      "id": 7,
+      "nome": "Fido Dido",
+      "email": "morreu@games.com",
+      "senha": "123"
+    },
+    {
+      "id": 8,
+      "nome": "Fido Dido",
+      "email": "morreu@games.com",
+      "senha": "9886"
+    }
+  ]
+}

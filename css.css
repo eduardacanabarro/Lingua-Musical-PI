@@ -1,0 +1,115 @@
+body {
+    background-color: #7fc483; /* verde */
+    font-family: Arial, sans-serif;
+}
+
+.divCenter {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header {
+    border: 2px solid #7fc483;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #f4f0f0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0eded;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(14, 12, 12);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50; /* verde mais escuro */
+}
+
+.register-container {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(227, 222, 222, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #918f8f;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+  }
+  
+.register-button {
+    background-color: #4CAF50; /* verde mais escuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #45a049; /* verde mais claro */
+}
+
+.already-have-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.already-have-account a {
+    color: #4CAF50; /* verde mais escuro */
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50; /* verde mais escuro */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

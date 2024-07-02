@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reprodução de Som</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e6f7e6; 
+        }
+
+        
+        #container {
+            width: 50%; 
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #006400; 
+            border-radius: 10px;
+            background-color: #b3e6b3; 
+        }
+
+        
+        button {
+            width: 150px; 
+            height: 50px; 
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #32CD32; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #228B22; 
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #006400; 
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #006400;
+            border-radius: 5px;
+            font-size: 14px;
+            display: block;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h2>Tocar Som</h2>
+        <button onclick="playSound('piano-bb_A#_major.wav.mp3')">Som 1</button>
+        <button onclick="playSound('piano-f_F#_major.wav.mp3')">Som 2</button>
+        <button onclick="playSound('piano-eb_D#_major.wav.mp3')">Som 3</button>
+        <button onclick="playSound('piano-c_C#_major.wav')">Som 4</button>
+
+        <p id="message">Não conseguiu de primeira? Tente novamente.</p>
+
+        <h3>Atividade</h3>
+
+        <input type="text" placeholder="A maior" id="a-maior">
+        <input type="text" placeholder="F maior" id="f-maior">
+        <input type="text" placeholder="C maior" id="c-maior">
+        <input type="text" placeholder="D maior" id="d-maior">
+
+        <button onclick="validateAnswers()">Validar Respostas</button>
+    </div>
+
+    <script>
+        function playSound(filename) {
+            const audio = new Audio(filename);
+            audio.play();
+        }
+
+        function validateAnswers() {
+            const aMaior = document.getElementById('a-maior').value;
+            const fMaior = document.getElementById('f-maior').value;
+            const cMaior = document.getElementById('c-maior').value;
+            const dMaior = document.getElementById('d-maior').value;
+
+            if (aMaior === '1' && fMaior === '2' && cMaior === '3' && dMaior === '4') {
+                alert('Respostas corretas!');
+            } else {
+                alert('Respostas incorretas. Por favor, tente novamente.');
+            }
+        }
+    </script>
+</body>
+
+</html>
